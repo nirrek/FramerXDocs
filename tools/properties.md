@@ -44,7 +44,7 @@ You can fill any Frame or Shape with either a color, gradient or image-fill.
 Colors in Framer are based on the HEX-model \(Hexadecimal\). You can also choose to use the HSL \(Hue - Saturation - Lightness\) or RGB \(Red-Green-Blue\) model.
 
 {% hint style="info" %}
-If you wish to quickly select a color from another layer or image then use the Pick Color tool, or CMD + C
+If you wish to quickly select a color from another layer or image then use the Pick Color tool, or CTRL + C
 {% endhint %}
 
 
