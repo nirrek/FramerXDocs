@@ -14,7 +14,7 @@ The biggest surface differences are:
 * There is no more built-in code editor inside Framer X.
 * There are some visual tools that write code for you \(link, scroll, page\).
 
-We strongly believe Framer X is better as legacy Framer from a prototyper programming perspective. It will allow you to build both very small high fidelity throw away prototypes all the way to production ready complex projects, if you like. The new declarative programming model with components will help you structure and organize your projects, make them easier to reason about for yourself and others, yet is completely optional if you have another preferred way of working.
+We strongly believe Framer X is better than legacy Framer from a prototyper programming perspective. It will allow you to build both very small high fidelity throw away prototypes all the way to production ready complex projects, if you like. The new declarative programming model with components will help you structure and organize your projects, make them easier to reason about for yourself and others, yet is completely optional if you have another preferred way of working.
 
 ### Workflow
 
