@@ -31,7 +31,7 @@ The functions interface in the properties panel allows you to select a file with
 The functions consist of two concepts: props functions and a data object. The props functions modify the properties for a given canvas object, optionally adding event handlers. The data objects is a flat store of observables that update the interface when changed.
 
 ```typescript
-const app = new Data({name: "Koen", panelLeft: 0})
+const app = Data({name: "Koen", panelLeft: 0})
 
 const animatePanel = (props) => {
   onClick: () => animate(app.panelLeft, 100)
@@ -96,13 +96,13 @@ Using a Data object is extremely simple, it works like any other object in JavaS
 ```typescript
 import { Data, animate } from "framer"
 
-const app = new Data({name: "Koen", panelLeft: 0})
+const app = Data({name: "Koen", panelLeft: 0})
 
 // You can update it per key
 app.name = "Jorn"
 
 // Or with a set of new data at once
-app.update({name: "Sara", panelLeft: 200})
+Object.assign(app, {name: "Sara", panelLeft: 200})
 
 // You can animate values like this (more about the api later)
 animate.spring(app.panelLeft, 400)
@@ -113,7 +113,7 @@ So now we have seen how to create a Data object, let’s use it in combination w
 ```typescript
 import { Data, animate } from "framer"
 
-const app = new Data({statusTop: 48}) // We start by making it visible
+const app = Data({statusTop: 48}) // We start by making it visible
 
 const statusHide = () => {
   top: app.statusTop,
