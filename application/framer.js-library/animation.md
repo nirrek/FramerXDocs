@@ -58,7 +58,7 @@ Events provide a powerful way to respond to changes in animations. This way you 
 
 Events in Framer use a [modern JavaScript feature](https://medium.com/front-end-hacking/callbacks-promises-and-async-await-ad4756e01d90) called async and await. They are powerful primitives but you can simply think of them as ways to “wait until something happens” like an animation ending or being interrupted.
 
-Let’s look at a simple example that waits for one animation to finish and then immediately starts a new one so it ends up where it began. We’ll use the async and await constructs to wait for the finish event.
+Let’s look at a simple example that waits for one animation to finish and then immediately starts a new one so it ends up where it began. We’ll use the async and await constructs to wait for the finished state.
 
 ```typescript
 import * as React from "react";
@@ -69,8 +69,8 @@ export class Example extends React.Component {
   left = Animatable(0);
 
   onClick = async () => {
-    await animate(this.left, 200).finish
-    await animate(this.left, 0).finish
+    await animate(this.left, 200).finished
+    await animate(this.left, 0).finished
   };
 
   render() {
@@ -79,13 +79,12 @@ export class Example extends React.Component {
 }
 ```
 
-When using `await` your function has to be marked `async`. This is how JavaScript works, so notice `async` next to the `onClick` function. From there you can see we use `await` with `.finish` on the animation to wait before running the next line of code, so that the animation only starts with the previous one is done. If you were to remove the await keywords, both animations would start immediately.
+When using `await` your function has to be marked `async`. This is how JavaScript works, so notice `async` next to the `onClick` function. From there you can see we use `await` with `.finished` on the animation to wait before running the next line of code, so that the animation only starts with the previous one is done. If you were to remove the await keywords, both animations would start immediately.
 
 The other available events are:
 
-* `start` – The animation was started \(this happens automatically if you use the `animate()` function.
-* `cancel` – The animation was canceled, for example because a new one was started on the same value.
-* `finish` – The animation finished completely.
+* `ready` – The animation was started \(this happens automatically if you use the `animate()` function.
+* `finished` – The animation finished completely.
 
 ## Technical Information
 
