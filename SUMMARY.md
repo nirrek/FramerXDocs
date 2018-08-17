@@ -26,6 +26,7 @@
     * [Interpolation](application/framer.js-library/interpolation.md)
     * [Components](application/framer.js-library/components.md)
     * [Events and Gestures](application/framer.js-library/events-and-gestures.md)
+  * [Framer Library Changelog](application/framer-library-changelog.md)
 * [Shortcuts](shortcuts.md)
 * [Tutorials](tutorials/README.md)
   * [Todo App](tutorials/todo-app.md)
