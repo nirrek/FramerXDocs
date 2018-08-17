@@ -230,18 +230,18 @@ Property controls can be hidden by implementing a function on the description. T
 In the following example we hide the the inCall boolean control when the connected property is false.
 
 ```typescript
-interface NetworkProperties {
+interface Props {
     connected: boolean
     inCall: boolean
 }
 
-export class NetworkComponent extends React.Component<NetworkProperties> {
-    static defaultProps: NetworkProperties = {
+export class NetworkComponent extends React.Component<Props> {
+    static defaultProps: Props = {
         connected: true,
         inCall: false,
     }
 
-    static propertyControls: PropertyControls<NetworkProperties> = {
+    static propertyControls: PropertyControls<Props> = {
         connected: { type: ControlType.Boolean },
         inCall: {
             type: ControlType.Boolean,
