@@ -107,7 +107,7 @@ _Hint: you can even override the props for the children by using React.Children.
 
 WIP: not in Beta 1. Basically import any design component from code by name.
 
-## Adding controls for Props
+## Exposing Controls
 
 You can describe a custom interface for your components so component consumers can configure them on the canvas. The only thing you have to do is add a static `propertyControls` method to your class with a descriptor. It will use `defaultProps` for the defaults and try to type check your descriptors if you added type annotations for your props.
 
@@ -141,7 +141,9 @@ export class Example extends React.Component<Partial<Props>> {
 }
 ```
 
-### Available controls
+### Available Controls
+
+Controls can be described by specifying one of the following types:
 
 * Boolean
 * Number
@@ -153,6 +155,8 @@ export class Example extends React.Component<Partial<Props>> {
 
 #### Boolean Control
 
+Booleans use a segmented control. The segment titles are _True_ and _False_ by default but these can be overridden using the _enabledTitle_ and _disabledTitle_.
+
 ```typescript
 interface BooleanControlDescription {
     type: ControlType.Boolean
@@ -162,6 +166,12 @@ interface BooleanControlDescription {
 ```
 
 #### Number Control
+
+Number controls are displayed using an input field and a slider. The _min_ and _max_ values can be specified to constraint the output.
+
+The default step size is 1. When a step size smaller then 1 is entered, the output will be floats.
+
+When the unit type is set to %, the input field will display `10` as `10%`.
 
 ```typescript
 interface NumberControlDescription {
@@ -175,6 +185,8 @@ interface NumberControlDescription {
 
 #### String Control
 
+String controls are displayed using a single line input field. A placeholder value can be set when needed.
+
 ```typescript
 interface StringControlDescription {
     type: ControlType.String
@@ -184,6 +196,8 @@ interface StringControlDescription {
 
 #### Color Control
 
+Color controls are displayed using a color picker popover and a number input for the alpha.
+
 ```typescript
 interface ColorControlDescription {
     type: ControlType.Color
@@ -191,6 +205,8 @@ interface ColorControlDescription {
 ```
 
 #### Enum Control
+
+An enum control displays a pop-up button with a fixed set of string values. The optionTitles can be set to have nicely formatted values for in the UI.
 
 ```typescript
 interface EnumControlDescription {
@@ -200,7 +216,30 @@ interface EnumControlDescription {
 }
 ```
 
+```typescript
+interface Props {
+  alignment: "start" | "center" | "end";
+}
+
+export class Stack extends React.Component<Props> {
+  static defaultProps: Props = {
+    alignment: "center"
+  };
+
+  static propertyControls: PropertyControls<Props> = {
+    alignment: {
+      type: ControlType.Enum,
+      options: ["start", "center", "end"],
+      optionTitles: ["Start", "Center", "End"],
+      title: "Align"
+    }
+  };
+}
+```
+
 #### Segmented Enum
+
+A segmented enum control is displayed using a segmented control. Since a segmented control has limited space this only works for a tiny set of string values.
 
 ```typescript
 interface SegmentedEnumControlDescription {
@@ -211,6 +250,8 @@ interface SegmentedEnumControlDescription {
 ```
 
 #### Fused Number
+
+The fused number control is specifically created for border-radius, border-width, and padding. It allows setting a number value either using a single input or using four seperate number inputs. The user can switch from a single input to four by toggling a boolean.
 
 ```typescript
 interface FusedNumberControlDescription {
@@ -223,9 +264,43 @@ interface FusedNumberControlDescription {
 }
 ```
 
+```typescript
+interface Props {
+  padding: number;
+  paddingPerSide: boolean;
+  paddingTop: number;
+  paddingRight: number;
+  paddingBottom: number;
+  paddingLeft: number;
+}
+
+export class Stack extends React.Component<Props> {
+  static defaultProps: Props = {
+    padding: 0,
+    paddingPerSide: false,
+    paddingTop: 0,
+    paddingRight: 0,
+    paddingBottom: 0,
+    paddingLeft: 0
+  };
+
+  static propertyControls: PropertyControls<Props> = {
+    padding: {
+      type: ControlType.FusedNumber,
+      splitKey: "paddingPerSide",
+      splitLabels: ["Padding", "Padding per Side"],
+      valueKeys: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
+      valueLabels: ["T", "R", "B", "L"],
+      min: 0,
+      title: "Padding"
+    }
+  };
+}
+```
+
 ### Hiding controls
 
-Property controls can be hidden by implementing a function on the description. The function receives the currently set properties and has to return a boolean.
+Controls can be hidden by implementing the _hidden_ function on the property description. The function receives an object containing the set properties and returns a boolean.
 
 In the following example we hide the the inCall boolean control when the connected property is false.
 
