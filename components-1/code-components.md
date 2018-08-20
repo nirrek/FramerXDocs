@@ -334,7 +334,7 @@ React components can do pretty much anything, but React itself is purely focused
 
 The main use case of Framer X is prototyping, which typically includes flows, scrolling, animations and gestures. Framer X includes an optional library of helpers called Framer.js for these tasks. Using these is not required, you can use anything you like, but they should make interactive prototyping more enjoyable in most cases.
 
-[Learn more about how to use the Framer.js library.](../application/framer.js-library/animation.md)
+[Learn more about how to use the Framer.js library.](../application/framer.js/animation.md)
 
 ## Using External Libraries
 
