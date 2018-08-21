@@ -34,7 +34,7 @@ This builds a simple React component with just a single `Frame`, that has the le
 
 ## Curves
 
-In the example above, we did not set any animation options, so it uses the default linear curve:
+In the example above, we did not set any animation options, so it uses the default ease curve:
 
 ```typescript
 animate(this.aLeft, 200)
@@ -46,11 +46,11 @@ If we would like the spring curve with options we simply use it like this:
 animate.spring(this.aLeft, 200, {tension: 400})
 ```
 
-There are three curves available:
+There are a couple curves available:
 
-* `linear` with options `{duration: 1}`
+* `linear` , `ease`, `easeIn`, `easeOut`, `easeInOut` with options `{duration: 1}`
 * `spring` with options `{tension: 10, friction: 100}`
-* `bezier` with options `[1, 2, 3, 4]`
+* `bezier` with options `[0, 0, 1, 1]` or `Bezier.Ease`
 
 ## Events
 
@@ -83,7 +83,7 @@ When using `await` your function has to be marked `async`. This is how JavaScrip
 
 The other available events are:
 
-* `ready` – The animation was started \(this happens automatically if you use the `animate()` function.
+* `ready` – The animation is ready to start \(this happens automatically if you use the `animate()` function.
 * `finished` – The animation finished completely.
 
 ## Technical Information
