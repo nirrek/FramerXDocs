@@ -16,11 +16,11 @@ Additionally to freeform overrides, you can also add managed overrides to design
   
 Let’s create a simple card with a profile image and a name and turn it into a design component. If you select the master, you will see a section Row / masin the properties panel with two label fields, a text and image field. Name the text field `title` and the profile `image` and enable them as properties.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_163220D9C0E803228842F5F3CA6BABB8C8965572CBECA3832DE533848A871A26_1534845531740_image.png)
+![](../.gitbook/assets/design-1.png)
 
 Now every instance of the Row component has two custom property fields in the properties panel that you can easily configure from the interface. Obviously you can still directly edit them from the canvas too and they will stay in sync.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_163220D9C0E803228842F5F3CA6BABB8C8965572CBECA3832DE533848A871A26_1534845681839_image.png)
+![](../.gitbook/assets/design-2.png)
 
 ## Exporting / Importing from Code
 
@@ -48,7 +48,7 @@ import { Row } from "./canvas";
 export class Test extends React.Component<{ width: number; height: number }> {
   render() {
     const { width, height } = this.props;
-    const names = ["Koen", "Jorn", "Sara"];
+    const names = ["Slim", "Koen"];
 
     return (
       <Stack width={width} height={height}>
@@ -64,7 +64,7 @@ export class Test extends React.Component<{ width: number; height: number }> {
 
 We are using our `Stack` component to build a vertical list based on a loop of the names array. You can add or remove items and see the component reflect it on your canvas. A great way to dynamically build components based on visual components with real data.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_163220D9C0E803228842F5F3CA6BABB8C8965572CBECA3832DE533848A871A26_1534846719691_image.png)
+![](../.gitbook/assets/design-3.png)
 
 {% hint style="info" %}
 In the future, you can import the design components from any React project, so you’ll be able to export and use visual components from Framer X anywhere.
