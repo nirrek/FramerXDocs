@@ -7,7 +7,7 @@ Thanks for joining the beta program. This guide is very much a work in progress 
 ### The Best Way to Start; TLDR
 
 * Read [how to think about Framer X](https://framer.gitbook.io/framer/#how-to-think-about-framer-x) and supported design work below.
-* Read the [beta program page](introduction/beta.md) on what to expect in Beta 1. _**Hint**: some of the code parts are still in progress \(code functions, state\), and being offline will cause some issues._
+* Read the [beta program page](introduction/beta/) on what to expect in Beta 1. _**Hint**: some of the code parts are still in progress \(code functions, state\), and being offline will cause some issues._
 * Explore the canvas, automatic layout, styling, stacks, design components, flow and scroll interactions, using the store to install packages and build a simple React component yourself, optionally with some [custom properties](components-1/#adding-framer-interface-for-props) that you can configure from the Framer interface.
 
 ## How to Think About Framer X
@@ -24,7 +24,7 @@ The idea behind Framer X is **not to generate code for you**, but instead to use
 
 The goal of Framer X is to support many types of workflows, and with that many types of users at different skill levels, but to never hold you back and even encourage you to explore more.
 
-The list below is an example of parts of Framer X you would need for different design tasks. Make sure to check our [beta feature list](introduction/beta.md#beta-features) to make sure what is available today.
+The list below is an example of parts of Framer X you would need for different design tasks. Make sure to check our [beta feature list](introduction/beta/#beta-features) to make sure what is available today.
 
 **A. Wire-framing**  – quickly visualize an interactive idea, layout, user flow and information architecture.
 

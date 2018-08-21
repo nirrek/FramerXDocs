@@ -9,7 +9,7 @@ The Framer X beta program was designed to both [get feedback](https://www.facebo
 An overview of the current feature state:
 
 1. **Beta I – August 1st, 2018** Majority of the design features, design components, basic store functionality and code components are ready for testing. The Framer.js library is only partly available, and code functions are missing.
-2. **Beta II – TBD** Focus on supporting the previous Framer workflow with code functions, state management, using design components from code, code exporting and a more complete Framer.js library.
+2. **Beta II – August 21st, 2018** Focus on code, supporting the previous Framer workflow with code overrides, state management, using design components from code, code exporting and a more complete Framer.js library.
 
 ### Feature Overview
 
@@ -19,15 +19,15 @@ Items ~~crossed out~~ are not on beta yet, but planned for release and should sh
 * **Canvas:** navigation, selection, editing.
 * **Layout:** \(auto\) hierarchy, \(auto\) positioning, frames, images, text, stacks.
 * **Drawing:** shapes, path editing, styling, grouping, boolean operations.
-* **Import / Export:** paste, Sketch paste, image exporting, SVG exporting, ~~code export~~.
+* **Import / Export:** paste, Sketch paste, image exporting, SVG exporting, code export.
 * **Preview:** window, frame selection, device, presentation mode, ~~mobile preview~~, ~~remote preview~~, ~~inspector~~, ~~print~~.
 * **Interactive:** link, scroll, page.
-* **Design Components:** panel, ~~organization~~, search, master, instance, overrides, nesting, ~~use from code~~.
+* **Design Components:** panel, ~~organization~~, search, master, instance, overrides, nesting, use from code.
 * **Store:** browse, search, install, ~~update~~, ~~private company store~~.
 * **Sharing:** ~~cloud~~, ~~web project~~.
 * **Code Components:** creation, editing, interface props, canvas children.
-* **Code Functions:** ~~creation~~, ~~editing~~, ~~state~~.
-* **Code Library:** animation, ~~interpolation~~, ~~events~~, ~~gestures,~~ ~~components~~.
+* **Code Overrides:** creation, editing, state.
+* **Code Library:** animation, ~~interpolation~~, ~~events~~, ~~gestures,~~ components.
 * **Packages:** publish, update, versioning, dependencies.
 
 ## How You can Help
@@ -46,8 +46,8 @@ While Framer X looks very similar to other design tools on the surface, there ar
 
 * Understand the main ideas behind Framer X.
 * Learn the difference between
-  * [Frames and Shapes](../tools/layout.md#frames-and-shapes) \(or, layout and drawing\).
-  * [Design Components and Code Components](../components-1/#types-of-components).
+  * [Frames and Shapes](../../tools/layout.md#frames-and-shapes) \(or, layout and drawing\).
+  * [Design Components and Code Components](../../components-1/#types-of-components).
 * Learn how to use the command key to:
   * Select any object directly on the canvas independent of the hierarchy.
   * Temporarily disable the hierarchy guessing system while manipulating objects.

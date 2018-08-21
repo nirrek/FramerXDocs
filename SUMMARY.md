@@ -2,7 +2,8 @@
 
 * [Framer X](README.md)
 * [Get Started](introduction/README.md)
-  * [Beta Program](introduction/beta.md)
+  * [Beta Program](introduction/beta/README.md)
+    * [Beta 2](introduction/beta/beta-2.md)
   * [Starting from Framer](introduction/starting-from-framer.md)
   * [Starting from ...](introduction/starting-from-....md)
 * [Canvas](canvas.md)
@@ -20,7 +21,7 @@
 * [Store](store.md)
 * [Code](application/README.md)
   * [Packages](application/packages.md)
-  * [Functions](application/functions.md)
+  * [Code Overrides](application/code-overrides.md)
   * [Framer Library](application/framer.js/README.md)
     * [Animation](application/framer.js/animation.md)
     * [Interpolation](application/framer.js/interpolation.md)
