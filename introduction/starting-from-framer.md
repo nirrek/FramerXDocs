@@ -14,12 +14,12 @@ We strongly believe Framer X is better than legacy Framer from a prototyper prog
 
 ### Things to Try
 
-These are some things to explore if you are coming from Framer Studio. Make sure you setup [VSCode for external editing](../application/#setup).
+These are some things to explore if you are coming from Framer Studio. Make sure you setup [VSCode for external editing](../code/#setup).
 
 * Create a single code component and modify the html and css. Study the `propertyControl` and how you can add properties interface to components.
-* Create a `<Frame />` component with an [animated property](../application/code-overrides.md#animations) via a [code override](../application/code-overrides.md), an `onClick` [event](../application/code-overrides.md#events) and use the `animate()` function to animate the property.
+* Create a `<Frame />` component with an [animated property](../code/code-overrides.md#animations) via a [code override](../code/code-overrides.md), an `onClick` [event](../code/code-overrides.md#events) and use the `animate()` function to animate the property.
 * Use a design component with custom properties from the canvas in a code component and [use it in a loop](../components/design.md#exporting-importing-from-code).
-* Use a code component on the canvas and use a [code override with state](../application/code-overrides.md#application-state) and an event handler modifying the state.
+* Use a code component on the canvas and use a [code override with state](../code/code-overrides.md#application-state) and an event handler modifying the state.
 
 ### JavaScript \(ES6\)
 

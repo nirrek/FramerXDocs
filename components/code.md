@@ -4,7 +4,7 @@
 
 Before you begin writing components, make sure you have an editor installed as Framer X does not come with a built in editor. Any editor that supports TypeScript will do, but we really like VSCode.
 
-Make sure you setup [VSCode for external editing](../application/#setup).
+Make sure you setup [VSCode for external editing](../code/#setup).
 
 {% hint style="info" %}
 Framer X Beta only supports TypeScript but the general release will support plain ES6 too.
@@ -349,7 +349,7 @@ React components can do pretty much anything, but React itself is purely focused
 
 The main use case of Framer X is prototyping, which typically includes flows, scrolling, animations and gestures. Framer X includes an optional library of helpers called Framer.js for these tasks. Using these is not required, you can use anything you like, but they should make interactive prototyping more enjoyable in most cases.
 
-[Learn more about how to use the Framer.js library.](../application/framer.js/animation.md)
+[Learn more about how to use the Framer.js library.](../code/framer.js/animation.md)
 
 ## Using External Libraries
 

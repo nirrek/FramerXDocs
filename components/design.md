@@ -72,7 +72,7 @@ In the future, you can import the design components from any React project, so y
 
 ## Store Publishing
 
-Every design component you make ends up as a component in the [package](../application/packages.md), including the custom override properties. This is a great way to make dynamic visual components without having to write any code.
+Every design component you make ends up as a component in the [package](../code/packages.md), including the custom override properties. This is a great way to make dynamic visual components without having to write any code.
 
 Make sure to properly name your visual components so they can be organized and filtered in the components panel. You can change a component name from the layer panel.  
 
