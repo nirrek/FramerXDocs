@@ -15,7 +15,7 @@ If you were using Framer Studio before, this update will provide a set of featur
 * Overrides \(for properties\) can now be defined from code.
 * Introducing Data for keeping application state.
 
-Learn more about [code](https://framer.gitbook.io/framer/application).
+[Learn more about code](https://framer.gitbook.io/framer/code).
 
 {% hint style="info" %}
 See the [full release notes](https://framer.com/x/updates?) on the Framer site.
