@@ -11,8 +11,8 @@ Code overrides allow you to change any Frame or Component on the canvas with cod
 
 Code overrides are simple JavaScript functions you can write yourself and apply to any Frame or Component on your canvas, so they are highly shareable. The functions are simple transformers that get the properties from the canvas as inputs \(props\) and return them with modifications.  
   
-Code overrides can live in any code file in your project. They get discovered as they use the `Override` [type specifier](https://www.typescriptlang.org/docs/handbook/basic-types.html) \(see example below\). You can apply any code override to any Frame \(or Component\) on the canvas from the properties panel under “Code”.  
-  
+Code overrides can live in any code file in your project. They get discovered as they use the `Override` [type specifier](https://www.typescriptlang.org/docs/handbook/basic-types.html) \(see example below\). You can apply any code override to any Frame \(or Component\) on the canvas from the properties panel under “Code”.
+
 The simplest example of a code override is one that sets the background color of a Frame to red, independent of the background you set on the canvas.
 
 ```typescript
@@ -22,6 +22,10 @@ export const makeRed: Override = props => {
   return { background: "red" };
 };
 ```
+
+{% hint style="info" %}
+Make sure you setup [VSCode for external editing](https://framer.gitbook.io/framer/~/edit/drafts/-LKS1WMROLkDNccBN9iI/application#setup).
+{% endhint %}
 
 ## Events
 

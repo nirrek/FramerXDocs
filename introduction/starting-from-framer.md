@@ -1,9 +1,5 @@
 # Starting from Framer
 
-{% hint style="warning" %}
-In Beta 1, our code features are a work in progress and incomplete. Therefore it will be rough to replicate your classic Framer workflow in Framer X for another week or two. Thanks for your patience.
-{% endhint %}
-
 ## Overview
 
 Framer X is quite different from legacy Framer at first sight. But it builds on everything that made the original Framer great with an improved approach, and solving some long standing problems like package collaboration.
@@ -16,20 +12,14 @@ The biggest surface differences are:
 
 We strongly believe Framer X is better than legacy Framer from a prototyper programming perspective. It will allow you to build both very small high fidelity throw away prototypes all the way to production ready complex projects, if you like. The new declarative programming model with components will help you structure and organize your projects, make them easier to reason about for yourself and others, yet is completely optional if you have another preferred way of working.
 
-### Workflow
+### Things to Try
 
-{% hint style="warning" %}
-Some of these steps are currently ~~unavailable~~ in Beta 1. These steps are merely to illustrate what we're planning for release.
-{% endhint %}
+These are some things to explore if you are coming from Framer Studio. Make sure you setup [VSCode for external editing](../application/#setup).
 
-Make sure you setup VSCode for external editing.
-
-* Create a single code component and return some html.
-* Create a `Frame` component with an animated property, an `onClick` event and use the `animate()` function to animate the property.
-* ~~Use a design component from the canvas in code and manipulate it.~~  _This is what old Framer could do, now let's take it further._ 
-* Use the `componentDidMount` lifecycle handler to fetch data and update itself.
-* Create another code component in the same file and use it a few times.
-* ~~Use a code component on the canvas and attach a function with state and an event handler modifying the state.~~
+* Create a single code component and modify the html and css. Study the `propertyControl` and how you can add properties interface to components.
+* Create a `<Frame />` component with an [animated property](../application/code-overrides.md#animations) via a [code override](../application/code-overrides.md), an `onClick` [event](../application/code-overrides.md#events) and use the `animate()` function to animate the property.
+* Use a design component with custom properties from the canvas in a code component and [use it in a loop](../components/design.md#exporting-importing-from-code).
+* Use a code component on the canvas and use a [code override with state](../application/code-overrides.md#application-state) and an event handler modifying the state.
 
 ### JavaScript \(ES6\)
 

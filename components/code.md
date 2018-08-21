@@ -4,9 +4,11 @@
 
 Before you begin writing components, make sure you have an editor installed as Framer X does not come with a built in editor. Any editor that supports TypeScript will do, but we really like VSCode.
 
-[Read more about setting up your code editor.](../application/#setup-and-workflow)
+Make sure you setup [VSCode for external editing](../application/#setup).
 
-_Note: Framer X Beta 1 only supports TypeScript but the general release will support plain ES6 too._
+{% hint style="info" %}
+Framer X Beta only supports TypeScript but the general release will support plain ES6 too.
+{% endhint %}
 
 ## React Components
 
@@ -101,11 +103,24 @@ export class Example extends React.Component<{width:number, height: number}> {
 
 Framer detects you are using the props.children property in your render method and automatically adds a connector to each instance of the component on your canvas \(a purple dot on the right side, like the scroll tool\). You can drag a connection from this connector to any Frame on the canvas and it will use it as its children to render.
 
-_Hint: you can even override the props for the children by using React.Children.Map and React.Children.cloneElement methods._
+_Hint: you can even override the props for the children by using `React.Children.Map` and `React.Children.cloneElement` methods._
 
 #### Using canvas imports
 
-WIP: not in Beta 1. Basically import any design component from code by name.
+You can easily import and use any named design component. The example below assumes you have a design component named `Row` .
+
+```typescript
+import * as React from "react";
+import { Row } from "./canvas";
+
+export class Test extends React.Component {
+  render() {
+    return <Row title="Koen" />;
+  }
+}
+```
+
+For a full overview see the [design components](design.md) guide.
 
 ## Exposing Controls
 
@@ -155,7 +170,7 @@ Controls can be described by specifying one of the following types:
 
 #### Boolean Control
 
-Booleans use a segmented control. The segment titles are _True_ and _False_ by default but these can be overridden using the _enabledTitle_ and _disabledTitle_.
+Booleans use a segmented control. The segment titles are `True` and `False` by default but these can be overridden using the `enabledTitle` and `disabledTitle`.
 
 ```typescript
 interface BooleanControlDescription {
@@ -300,9 +315,9 @@ export class Stack extends React.Component<Props> {
 
 ### Hiding controls
 
-Controls can be hidden by implementing the _hidden_ function on the property description. The function receives an object containing the set properties and returns a boolean.
+Controls can be hidden by implementing the `hidden` function on the property description. The function receives an object containing the set properties and returns a boolean.
 
-In the following example we hide the the inCall boolean control when the connected property is false.
+In the following example we hide the the `inCall` boolean control when the connected property is false.
 
 ```typescript
 interface Props {
@@ -338,17 +353,15 @@ The main use case of Framer X is prototyping, which typically includes flows, sc
 
 ## Using External Libraries
 
-WIP, not in Beta 1. But you can find hints in the package guide.
+WIP, not in Beta yet. But you can find hints in the package guide.
 
 ## Using Asset from Components
 
-WIP, not in Beta 1.
+WIP, not in Beta yet.
 
 ## Editing Components from Packages
 
-WIP, not in Beta 1.
+WIP, not in Beta yet. But you can right click any component and select "Copy Code".
 
 
-
-See Code section for more details in the interim.
 

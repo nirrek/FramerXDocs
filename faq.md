@@ -22,7 +22,7 @@ We aim to support both TypeScript and plain ES6 on release.
 
 ## What kind of code does Framer X generate?
 
-The point of Framer X is not to generate code for you but use the code you \(or someone else\) wrote to compose interfaces.
+The point of Framer X is not to generate code for you but use the code you \(or someone else\) wrote to compose interfaces. We do however aim to be able to let you import design components from any arbitrary React project on release.
 
 ## Can I beta test the private store for my company?
 
@@ -61,4 +61,12 @@ We will keep supporting and updating Framer Studio once we release Framer X so t
 ## Can I open Framer Studio .framer documents?
 
 Some might work for the design side only, but this is very buggy. It's better to create a new project and copy over all your Frames.
+
+## Can I use the Framer theme for my editor?
+
+Framer has created the "Syntax Theme": awesome looking themes for both Visual Studio Code and Atom, so that you can code your components in true Framer style.
+
+* [Find out more about the Syntax Theme](https://framer.com/free-syntax-theme/)
+* [Download the theme from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Framer.framer-syntax)
+* [Download the theme from Atom Themes](https://atom.io/themes/framer-syntax) 
 

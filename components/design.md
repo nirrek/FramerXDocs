@@ -24,8 +24,12 @@ Now every instance of the Row component has two custom property fields in the pr
 
 ## Exporting / Importing from Code
 
-Every design component gets exported automatically, making it importable from code. This offers great flexibility as you can express them dynamically with loops to create dynamic lists or grids with real data.  
-  
+Every design component gets exported automatically, making it importable from code. This offers great flexibility as you can express them dynamically with loops to create dynamic lists or grids with real data.
+
+{% hint style="info" %}
+Make sure you setup [VSCode for external editing](https://framer.gitbook.io/framer/~/edit/drafts/-LKS1WMROLkDNccBN9iI/application#setup).
+{% endhint %}
+
 Let’s start with the design component we created for Overrides in the previous paragraph. Make user you name your design component in the layer panel, in this case Row . As soon as you name the component, code for it gets exported in the file `code/canvas.ts`. 
 
 From there we can import it into any other code file like `import { Row } from "./canvas"`. The imported Row is a React component with the properties you defined in the master, in this case profile and title. Using the component will look like any other component:

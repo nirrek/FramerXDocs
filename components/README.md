@@ -12,8 +12,8 @@ _PS: Please Lego don't sue me for this analogy._
 
 Framer X has two types of components, which it treats the same because they ultimately are the same under the hood: React components:
 
-* \*\*\*\*[**Design components**](design-components-wip.md) – components that you draw on the canvas consisting of visual and basic interaction that you can express on the canvas. Everyone can build these. Design components are fully editable on the canvas.
-* \*\*\*\*[**Code components**](code-components.md) – components that are backed by code with React. They can be anything from simple HTML and CSS all the way to advanced JavaScript, optionally building on other libraries again. Code component are only editable from code, but they can display other Frames from the canvas via the children prop or canvas imports \(more below\).
+* \*\*\*\*[**Design components**](design.md) – components that you draw on the canvas consisting of visual and basic interaction that you can express on the canvas. Everyone can build these. Design components are fully editable on the canvas.
+* \*\*\*\*[**Code components**](code.md) – components that are backed by code with React. They can be anything from simple HTML and CSS all the way to advanced JavaScript, optionally building on other libraries again. Code component are only editable from code, but they can display other Frames from the canvas via the children prop or canvas imports \(more below\).
 
 Any component can be displayed on the canvas, but interactive components \(like scroll or something with a click\) only work in the Preview. Both design and code components can be composed into any hierarchy on the canvas, design components can even contain code components, and every component has the same automatic layout options as any Frame.
 

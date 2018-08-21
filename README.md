@@ -8,7 +8,7 @@ Thanks for joining the beta program. This guide is very much a work in progress 
 
 * Read [how to think about Framer X](https://framer.gitbook.io/framer/#how-to-think-about-framer-x) and supported design work below.
 * Read the [beta program page](introduction/beta/) on what to expect in Beta 1. _**Hint**: some of the code parts are still in progress \(code functions, state\), and being offline will cause some issues._
-* Explore the canvas, automatic layout, styling, stacks, design components, flow and scroll interactions, using the store to install packages and build a simple React component yourself, optionally with some [custom properties](components-1/#adding-framer-interface-for-props) that you can configure from the Framer interface.
+* Explore the canvas, automatic layout, styling, stacks, design components, flow and scroll interactions, using the store to install packages and build a simple React component yourself, optionally with some [custom properties](components/#adding-framer-interface-for-props) that you can configure from the Framer interface.
 
 ## How to Think About Framer X
 

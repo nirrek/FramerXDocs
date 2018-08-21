@@ -1,9 +1,5 @@
 # Code
 
-{% hint style="warning" %}
-Some features on this page are still in development and only become available in a later beta. Check the [features list here](../introduction/beta/#beta-features).
-{% endhint %}
-
 ## Code in Framer
 
 Framer X lets everyone do advanced interactive design without using a line of code; either by using the interactive tools, or by using components from the store that were built by others.   
@@ -19,7 +15,7 @@ Framer X uses code in a different way than you might be used to from a design to
 
 Framer uses code in two distinct places: **components** and **functions**.
 
-[Components](../components-1/) are [React Components](https://reactjs.org/docs/thinking-in-react.html). They are parts of an interface that you can compose into large applications. The code that you typically write for components concern just that component. So for a slider, it would contain the code to draw the knob and rails, plus the code to handle the scrubbing, nothing more than that.
+[Components](../components/) are [React Components](https://reactjs.org/docs/thinking-in-react.html). They are parts of an interface that you can compose into large applications. The code that you typically write for components concern just that component. So for a slider, it would contain the code to draw the knob and rails, plus the code to handle the scrubbing, nothing more than that.
 
 [Functions](code-overrides.md) facilitate communication between components. To turn components into an app, they need to communicate. So the slider has to maybe change the position of something. Functions allow you to override any properties before the components get previewed, update or respond to application state, and attach event handlers to make things interactive.
 
@@ -33,28 +29,18 @@ All code in Framer is expressed in plain **React** using **JavaScript ES6**. A c
 
 **Note**: Although there might be a way to create React Native applications in Framer in the future, we don’t offer an official way today. You are of course free to explore how far you can come yourself. Our open source Framer library should contain everything you need to get started.
 
-## Setup
+## Editor Setup
 
 Framer X relies on an external editor for writing code. Any editor will work, but we strongly suggest one that supports TypeScript \(for auto complete\). Our personal favourite by far is [VSCode by Microsoft](https://code.visualstudio.com/) with the optional [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) installed so your code is always formatted consistently.
 
-### Changing your default editor
+#### Changing your default editor
 
-* Go to a  `.TSX`  file
-* Right-click and choose  `Get Info` 
-* At the   `Open With`  section you can select the desired app you wish to use as your default.
-* Last but not least, click  `Change All`  and then choose  `Continue` 
+* Go to any `.tsx` file in your Finder.
+* Right-click and choose "Get Info".
+* At the  "Open With…" section you can select your editor.
+* Click "Change All…" and then choose "Continue".
 
-{% hint style="warning" %}
-You may have to restart your editor in order for Framer X to notice the new default choice.
-{% endhint %}
-
-### Themes
-
-Framer has created the Syntax Theme: awesome looking themes for both Visual Studio Code and Atom, so that you can code your components in true Framer style.
-
-* [Find out more about the Syntax Theme](https://framer.com/free-syntax-theme/)
-* [Download the theme from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Framer.framer-syntax)
-* [Download the theme from Atom Themes](https://atom.io/themes/framer-syntax) 
+You may have to restart your editor in order for Framer X to notice the new default choice. If you still get an error, make sure your editor is not in some updating state where there are temporarily two apps.
 
 ## Workflow
 
