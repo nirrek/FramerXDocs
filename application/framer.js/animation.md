@@ -50,7 +50,7 @@ There are a couple curves available:
 
 * `linear` , `ease`, `easeIn`, `easeOut`, `easeInOut` with options `{duration: 1}`
 * `spring` with options `{tension: 10, friction: 100}`
-* `bezier` with options `[0, 0, 1, 1]` or `Bezier.Ease`
+* `bezier` with options `[0, 0, 1, 1]` or `Bezier.Ease`, `Bezier.EaseOut`, etc.
 
 ## Events
 
