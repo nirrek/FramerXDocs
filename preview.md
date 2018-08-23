@@ -1,6 +1,6 @@
 # Preview
 
-Framer X has a Preview window which allows you to see an accurate and live representation of anything that you are creating. And it does so interactively! Just hop into Preview mode by tapping the Play icon in the top right corner or hit CMD + P to see it in action.
+Framer X has a Preview window which allows you to see an accurate and live representation of anything that you are creating. And it does so interactively! Just hop into Preview mode by tapping the Play icon in the top right corner or hit `CMD`+`P` to see it in action.
 
 ![](.gitbook/assets/frame-2x%20%283%29.png)
 
@@ -42,7 +42,7 @@ Select Keep On Top if you want to cement the preview window stuck in the top cor
 
 ## Presentation
 
-When your prototype is finished and you are ready to show it to the world then go ahead and jump into Presentation mode by pressing  `CMD`    `Shift`    `F` . Your prototype will then take full center and you will not be distracted by the rest of the UI. Perfect for testing it out.
+When your prototype is finished and you are ready to show it to the world then go ahead and jump into Presentation mode by pressing  `CMD`+`Shift`+`F` . Your prototype will then take full center and you will not be distracted by the rest of the UI. Perfect for testing it out.
 
 
 
