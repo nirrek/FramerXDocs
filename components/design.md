@@ -14,7 +14,7 @@ Design Component instances can have overrides where they visually differ from th
   
 Additionally to freeform overrides, you can also add managed overrides to design components to create a custom property interface in the properties panel. Framer X detects any Text layers and Frames with an image fill in your component hierarchy and lets you define their contents as properties. This is great for when you want to create easily configurable components without editing them on the canvas.  
   
-Let’s create a simple card with a profile image and a name and turn it into a design component. If you select the master, you will see a section Row / Master in the properties panel with two label fields, a text and image field. Name the text field `title` and the profile `image` and enable them as properties.
+Let’s create a simple card with a profile image and a name and turn it into a design component. If you select the master, you will see a section Row / Master in the properties panel with two label fields, a text and image field. Name the text field `Name` and the profile `Avatar` and enable them as properties.
 
 ![](../.gitbook/assets/design-1.png)
 
