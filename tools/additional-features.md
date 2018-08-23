@@ -8,15 +8,12 @@ Use this to quickly reorder hierarchy. Selecting a layer, right-clicking on it a
 
 ## **Duplicate**
 
-Selecting a frame or shape and right-clicking on it and then selecting _duplicate_ will copy and paste it onto the canvas, along with all the properties and child layers it contains. You can also use the shortcut "CMD + D". Duplicate frames will be placed to the right of the original frame, while duplicate layers will be stacked on top of the original layer.
+Selecting a frame or shape and right-clicking on it and then selecting _duplicate_ will copy and paste it onto the canvas, along with all the properties and child layers it contains. You can also use the shortcut `⌘`+`D`. Duplicate frames will be placed to the right of the original frame, while duplicate layers will be stacked on top of the original layer.
 
 ## **Delete**
 
-Selecting a frame or shape and right-clicking _delete_ \(or shortcut CMD+X or backspace\) will immediately remove it, along with all the child layer it contains.
+Selecting a frame or shape and right-clicking _delete_ \(or shortcut `⌘`+`X` or `Backspace`\) will immediately remove it, along with all the child layer it contains.
 
 ## Remove Frame
 
-Selecting a frame and right-clicking _remove frame_ \(or shortcut CMD+Backspace\) will only remove the current Frame. It will not effect the child layers it contains.
-
-
-
+Selecting a frame and right-clicking _remove frame_ \(or shortcut `⌘`+`Backspace`\) will only remove the current Frame. It will not effect the child layers it contains.

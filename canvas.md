@@ -8,7 +8,7 @@ Framer X its interface will be familiar to most, with a large canvas, device pre
 
 It offers a blank canvas to explore ideas through quick concepts, one-off mockups or to create advanced designs on. You can draw directly on the canvas, import images and insert icons. Or set up a series of frames to create a multi-screen app flow.
 
-Designing on the canvas works great for smaller interactions, but we recommend using frames for complex and responsive app flows. No matter how you like to work, our canvas supports your design flow.[  
+Designing on the canvas works great for smaller interactions, but we recommend using frames for complex and responsive app flows. No matter how you like to work, our canvas supports your design flow.[
 ](https://framer.com/getstarted/guides/code/#preview)
 
 ![](.gitbook/assets/canvas-overview-2x.jpg)
@@ -27,7 +27,7 @@ You can use the Zoom tool \(or use the shorthand "Z"\) to quickly zoom in and ou
 
 ### Direct selection
 
-You can easily select any layer on the Canvas by simply clicking on them. Often, you know exactly which layer you want to select. In those cases we allow you to speed up the process and hold CMD while you make your selection so that you are able to directly select that Frame inside of another Frame its Frame.
+You can easily select any layer on the Canvas by simply clicking on them. Often, you know exactly which layer you want to select. In those cases we allow you to speed up the process and hold `⌘` while you make your selection so that you are able to directly select that Frame inside of another Frame its Frame.
 
 ![](.gitbook/assets/canvas-direct-selection-2x.jpg)
 
@@ -56,8 +56,3 @@ _This section of the docs is coming soon._
 ## Frames \(as screens\)
 
 _This section of the docs is coming soon._
-
-
-
-
-

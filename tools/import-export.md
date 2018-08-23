@@ -2,27 +2,27 @@
 
 ## Import
 
-Framer X supports the Sketch Plugin from Framer Studio. This means you can easily copy your artboards from Sketch and paste them in Framer X. 
+Framer X supports the Sketch Plugin from Framer Studio. This means you can easily copy your artboards from Sketch and paste them in Framer X.
 
-Here’s an overview of the specific features and tools included in this plugin:  
-  
+Here’s an overview of the specific features and tools included in this plugin:
+
 **Supported:**
 
-* Artboards
-* Groups
-* Shapes
-* Text Layers
-* Paths
-* Boolean Operations
-* Symbols
+- Artboards
+- Groups
+- Shapes
+- Text Layers
+- Paths
+- Boolean Operations
+- Symbols
 
 **Not yet supported:**
 
-* Nested Symbols
-* Stroke Settings
-* Masked Layers
-* Image Fill
-* Radial / Angular Gradient
+- Nested Symbols
+- Stroke Settings
+- Masked Layers
+- Image Fill
+- Radial / Angular Gradient
 
 ## Export
 
@@ -32,10 +32,10 @@ Exporting works exactly as you’d expect. You can create multiple exports for a
 
 You can export your Frames to:
 
-* PNG
-* JPG
-* WEBP
-* PDF
+- PNG
+- JPG
+- WEBP
+- PDF
 
 _You can also copy the CSS code from your Frame directly._
 
@@ -45,7 +45,7 @@ Right-click a layer and select **Copy CSS** to copy the CSS values or **Copy SVG
 
 ### **Quick Exporting**
 
-Framer X allows for quick exporting just by right-clicking on a layer. Select **Copy Image** or hit `CMD` `C` to copy the selected item to your clipboard. You can paste to any app that supports pasting images, easily add your exports to documents, create quick mocks, or gather feedback in chat apps.
+Framer X allows for quick exporting just by right-clicking on a layer. Select **Copy Image** or hit `⌘`+`C` to copy the selected item to your clipboard. You can paste to any app that supports pasting images, easily add your exports to documents, create quick mocks, or gather feedback in chat apps.
 
 ### **Exporting Presets**
 
@@ -53,9 +53,8 @@ Framer has a few pre-loaded exporting presets. The iOS and Android presets conta
 
 **iOS Size Presets:**
 
- `1x`  `2x`  `3x` 
+`1x` `2x` `3x`
 
 **Android Size Presets**
 
- `1x`  `1.5x`  `2x` `3x` `4x` 
-
+`1x` `1.5x` `2x` `3x` `4x`

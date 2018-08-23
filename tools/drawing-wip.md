@@ -12,18 +12,17 @@ Our path tool also helps you with defining diagonal lines, continuing along the 
 
 ### Editable segments
 
-Press Enter or double-click on a shape, and hover over any line to drag entire segments at once. This comes in handy for rapid editing of more complex shapes.
+Press `Enter` or double-click on a shape, and hover over any line to drag entire segments at once. This comes in handy for rapid editing of more complex shapes.
 
 ### **Curving**
 
-Curve Bending uses synchronized anchor points to guide you closer to your desired curvature, allowing for more advanced illustration work. This is especially helpful if you’re departing from geometric shapes and into the realm of freeform drawing. Click and drag any anchor point to bend and twist the path into more organic forms.  
-
+Curve Bending uses synchronized anchor points to guide you closer to your desired curvature, allowing for more advanced illustration work. This is especially helpful if you’re departing from geometric shapes and into the realm of freeform drawing. Click and drag any anchor point to bend and twist the path into more organic forms.
 
 ## Shapes
 
-Insert rectangles, ovals, polygons, and stars, then use them as a starting point for more advanced shapes. Shortcuts: Type **R** for rectangle, **O** for oval. You can even create polygons or stars. Double-click to edit and customize completely.
+Insert rectangles, ovals, polygons, and stars, then use them as a starting point for more advanced shapes. Shortcuts: Type `R` for rectangle, `O` for oval. You can even create polygons or stars. Double-click to edit and customize completely.
 
-If you want shapes to act upon layout rules like any other layer, you can wrap them in a Frame by selecting the shape and pressing **Enter**. This way the Frame will act like a smart container to the shape.
+If you want shapes to act upon layout rules like any other layer, you can wrap them in a Frame by selecting the shape and pressing `Enter`. This way the Frame will act like a smart container to the shape.
 
 ## Boolean operations
 
@@ -36,4 +35,3 @@ We created our Drawing tool with output as top of mind. Being both SVG-driven an
 ## Tutorial
 
 Find out more about our Drawing tools via our YouTube channel: [https://www.youtube.com/watch?v=iHwjBd8pkDM&list=PL9p5auxyrweNVMAzsrEd9DmsM25U8ij1M&index=3](https://www.youtube.com/watch?v=iHwjBd8pkDM&list=PL9p5auxyrweNVMAzsrEd9DmsM25U8ij1M&index=3)
-
