@@ -53,7 +53,7 @@ export class Test extends React.Component<{ width: number; height: number }> {
     return (
       <Stack width={width} height={height}>
         {names.map(name => (
-          <Row title={name} />
+          <Row Name={name} />
         ))}
       </Stack>
     );
